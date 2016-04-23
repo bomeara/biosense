@@ -2,3 +2,5 @@
 
 export(ConvertSpectrumToNDSI)
 export(DoUnivariateOUwieDredge)
+export(GetSpeciesMeansWithError)
+export(PadData)

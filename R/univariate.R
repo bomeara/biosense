@@ -9,5 +9,7 @@
 #' alpha and theta for OU, and model-averaged estimates for sigma and alpha.
 #' @export
 DoUnivariateOUwieDredge <- function(data, phy) {
-	
+
 }
+
+#' Get phylogenetic means for species (including ones with missing data)

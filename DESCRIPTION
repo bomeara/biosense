@@ -11,9 +11,9 @@ Description: This uses cleaned data from hyperspectral instruments, a
 License: GPL3
 LazyData: TRUE
 Imports:
-    dplyr
-OUwie
-Rphylopars
+    dplyr,
+    OUwie,
+    Rphylopars
 Suggests:
     testthat
 RoxygenNote: 5.0.1

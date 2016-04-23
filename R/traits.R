@@ -28,7 +28,7 @@ GetPhylogeneticMeans <- function(data, phy, model="BM", phylo_correlated=FALSE, 
   if(pad.missing) {
     data <- PadData(data, phy$tip.label, strict=FALSE)
   }
-  result.phylopars <- phylopars(trait_data = data, tree=phy, model=model, pheno_error=TRUE, phylo_correlated=phylo_correlated)
-  result.list <- list(species.means=result.phylopars$anc_recon[sequence(Ntip(phy)),], species.var=result.phylopars$anc_var[sequence(Ntip(phy)),], result.phylopars = result.phylopars)
+  result.phylopars <- Rphylopars::phylopars(trait_data = data, tree=phy, model=model, pheno_error=TRUE, phylo_correlated=phylo_correlated)
+  result.list <- list(species.means=result.phylopars$anc_recon[sequence(ape::Ntip(phy)),], species.var=result.phylopars$anc_var[sequence(Ntip(phy)),], result.phylopars = result.phylopars)
   return(result.list)
 }

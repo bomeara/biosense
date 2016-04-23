@@ -4,10 +4,12 @@
 \alias{ConvertSpectrumToNDSI}
 \title{Convert from spectrum to NDSI}
 \usage{
-ConvertSpectrumToNDSI(spectrum)
+ConvertSpectrumToNDSI(spectrum, detector.bounds)
 }
 \arguments{
 \item{spectrum}{An input spectrum. First column is species names.}
+
+\item{detector.bounds}{Two row matrix; each column has frequency bounds for each detector}
 }
 \value{
 A data.frame with species names (first column) and NDSI columns
@@ -18,5 +20,9 @@ Convert from spectrum to NDSI
 \details{
 Input columns have colnames that have wavelength in nm (as character), other than species names
 Export columns have colnames that have the pair: 700_805 for NDSI for 700 nm and 805 nm bands
+Since NDSI should only be computed between spectra measured by the same detector, detector.bounds
+provides information on these boundaries. Each column is one detector, first row is starting frequency
+measured by that detector, second row is ending frequency. Any frequencies not in the included ranges
+will not be included in the output.
 }
 

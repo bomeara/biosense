@@ -15,4 +15,8 @@ A data.frame with species names (first column) and NDSI columns
 \description{
 Convert from spectrum to NDSI
 }
+\details{
+Input columns have colnames that have wavelength in nm (as character), other than species names
+Export columns have colnames that have the pair: 700_805 for NDSI for 700 nm and 805 nm bands
+}
 

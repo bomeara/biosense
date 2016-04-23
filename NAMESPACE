@@ -3,5 +3,6 @@
 export(ConvertNDSIVectorToMatrix)
 export(ConvertSpectrumToNDSI)
 export(DoUnivariateOUwieDredge)
+export(GetPhylogeneticMeans)
 export(GetSpeciesMeansWithError)
 export(PadData)

@@ -1,0 +1,19 @@
+Package: biosense
+Type: Package
+Title: Functions for combining hyperspectral data with phylogenies and other
+    traits
+Version: 0.1
+Date: 2016-04-22
+Author: Dudu Meireles & Brian O'Meara
+Maintainer: Dudu <meireles@umn.edu>
+Description: This uses cleaned data from hyperspectral instruments, a
+    chronogram, and potentially other trait data to perform analyses.
+License: GPL3
+LazyData: TRUE
+Imports:
+    dplyr
+OUwie
+Rphylopars
+Suggests:
+    testthat
+RoxygenNote: 5.0.1
